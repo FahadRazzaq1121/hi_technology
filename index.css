@@ -1,0 +1,520 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Nav Bar ================= */
+/* --------------------------------------- */
+/* --------------------------------------- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    opacity: 0.9 ;
+    z-index: 2;
+  }
+  
+  .logo a {
+    color: orange;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0rem 3rem;
+  }
+.logo span{
+    color: black;
+    font-weight: 400;
+}
+.navigation {
+    display: flex;
+    background-color: white;
+  }
+.navigation li {
+    list-style: none;
+    padding: 0 1rem;
+  }
+.navigation li a {
+    color:#1b1b1b;
+    font-size: 18px;
+    text-decoration: none;
+  }
+.navigation li a:hover {
+    color:orange;
+    border-bottom: 1px solid orange;
+    font-size: 18px;
+    text-decoration: none;
+  }
+.menu-toggle {
+    display: none;
+  }
+  
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Hero Section============= */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.hero_sections{
+background-image: url(./HeroSecPic/Hero_sec3.avif);
+height: 600px;
+max-width: 100%;
+background-repeat: no-repeat;
+opacity: 0.9;
+background-size: cover;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.hero_sections .Our_goal{
+    font-size: 42px;
+    text-align: center;
+    color: white;
+    font-weight: 800;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.hero_sections .our_goalway{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.hero_sections .our_goalway span{
+    color: #f44336;
+    font-size: 40px;
+    font-weight: 900;
+}
+.hero_sections .we-work{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.hero_sections .btn_2{
+    font-size: 16px;
+    margin-top: 20px;
+    padding: 10px 20px;
+    border:1px solid white;
+    background: transparent;
+    color: white;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.hero_sections .btn_2:hover{
+    opacity: 0.5;
+}
+
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Services================= */
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* .Main-container{
+    max-width: 80rem;
+    margin: 0 auto;  
+} */
+.Services{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 3rem;
+    gap: 1rem;
+}
+.line{
+    color: #f44336;
+    margin-top:-1rem;
+}
+.service{
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.service .icon{
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: rgb(248, 114, 4);
+}
+.service .Heading_2{
+    text-align: center;
+    color: #1b1b1b;
+}
+.service .descirption{
+    text-align: center;
+    line-height: 1.5;
+    font-size: 16px;
+    color: #1b1b1b;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Portfolio================= */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.recent_work{
+    background-color: #f7f7f7;
+    padding: 1rem ;
+}
+.top_text{
+    text-align: center;
+    font-size: x-large;
+}
+.descirption{
+    font-size: 16px;
+    padding: 12px;
+}
+.portfolios, .core_feature, .testimonial{
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+.portfolio{
+    width: 340px;
+    height: 250px;
+    background: white;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+.portfolio img{
+    height: 170px ;
+    width: 100%;
+    background-color: #1b1b1b;
+}
+.portfolio img:hover{
+    opacity: 0.6;
+    transition: all 0.6s;
+}
+.portfolio .Headed_2 a{
+    display: block;
+    text-align: center;
+    align-items: center;
+    font-size: 28px;
+    color: #616161;
+    font-weight: 400;
+    text-decoration: none;
+}
+.portfolio .Headed_2 a:hover{
+    color: #1b1b1b;
+    font-weight: bold;
+}
+.portfolio .Designer_name{
+    text-align: center;
+    font-size: 16px;
+    color: #616161;
+    font-weight: 300;
+}
+.portfolio_grid, .feature_grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);  
+    column-gap: 2.4rem ;
+    row-gap: 2rem;
+}
+.btn-portfolio{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    margin: 5rem 0;
+    
+}
+.btn-portfolio button{
+    padding: 14px;
+    font-size: 16px;
+    background-color: white;
+    cursor: pointer;
+    border: none;
+    color: #616161;
+    font-weight: 100;
+}
+.btn-portfolio button:hover{
+    background-color: #f7f7f7;
+    border:0.5px solid  #eaeaec;
+    transition: all 0.6s;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Statistic================= */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.statistic{
+    background-image: url("./1111.avif");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0.8 black;
+}
+.statistic i{
+    font-size: 5rem ;
+    text-align: center;
+    color: #eaeaec;
+}
+.statistic .Number_of_client{
+    font-size:2rem;
+    padding: 8px;
+    text-align: center;
+    color:white;
+    font-weight: 400;
+    text-shadow:2px 3px 3px rgba(0, 0, 0, 0.1) ;
+}
+.statistic .client_feedback{
+    font-size:1rem;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+    text-shadow:2px 3px 3px rgba(0, 0, 0, 0.1) ; 
+    padding-top: 18px;  
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Core Features============ */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.featuers{
+    padding-top: 2rem;
+}
+.core_feature{
+    padding: 0 6rem;
+}
+.feature .descirption{
+    font-size: 16px;
+    text-align: justify;
+    color: #616161;
+    line-height: 1.3;
+}
+.icons{
+    font-size: 2rem;
+    color: orange ;
+}
+.icons span{
+    font-size: 22px;
+    color: #616161;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Customer fdbk============ */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.testimonials{
+    background-color: #f7f7f7;
+    padding-top: 2rem;
+    margin-top: 7rem;
+    padding-bottom: 4rem;
+}
+.customer{
+    width: 600px;
+    height: 150px;
+    background-color: white;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.cus_img{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+   
+}
+.testimonial_grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1.5rem;
+    column-gap: 2.4rem;
+}
+.customer_name{
+    padding-left: 1rem;
+    font-size: 16px;
+    font-weight: bold;
+    color: #616161;
+}
+.customer_name span{
+    font-size: 10px;
+}
+.customer_feedback{
+    font-size: 14px;
+    padding-left: 1rem;
+    line-height: 1.2;
+    color: gray;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Blog Section============= */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.Blogs_container{
+    margin:2rem;
+}
+
+.Blogs{
+    display: flex;
+    justify-content: center;
+}
+.blog_details {
+    padding: 1rem;
+    position: relative;
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.1);
+}
+.blog_details img{ 
+    height: 15rem;
+    width: 100%;
+    transition: all 0.4s;
+    display: block;
+    
+}
+.blog_img{
+    overflow: hidden;
+    width: 100%;
+    transition: .7s ease;
+    backface-visibility: hidden;
+    background-color: black;
+}
+.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2.5rem;
+    color:silver;
+  }
+.blog_img:hover .img_bl{
+    opacity: 0.6;
+}  
+.blog_img:hover .middle{
+    opacity: 1;
+} 
+.blog_details img:hover{
+    transform: scale(1.3);
+} 
+.details{
+    font-size: 20px;
+    text-decoration: none;
+    color: #616161;
+}
+.details:hover{
+    color: #f44336;
+    transition: all 0.4s;
+}
+.name_date{
+    font-size: 12px;
+    color: #616161;
+    text-align: center;
+    padding: 8px 0;
+}
+.name_date span a{
+    text-decoration: none;
+    color:#616161;
+    text-align: center;
+}
+.name_date span a:hover{
+    color: #f44336;;
+    border-bottom: 0.5px solid #f44336;;
+    transition: all 0.9s;
+}
+/* --------------------------------------- */
+/* --------------------------------------- */
+/* ==============Footer=================== */
+/* --------------------------------------- */
+/* --------------------------------------- */
+.footer_container{
+    background-color: rgb(29, 29, 29);
+    height:100%;
+}
+.Social_icons{
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom:1px solid rgb(46, 46, 46);  
+}
+.Iconsss a i{
+    border: 1px solid rgb(46, 46, 46);
+    font-size: 2rem;
+    padding: 2rem 5rem;
+    text-decoration: none;
+    color: silver;
+}
+.f1 a i:hover{
+    color: white;
+    background-color: rgb(86, 86, 241);
+}
+.T1 a i:hover{
+    color: white;
+    background-color: rgb(136, 136, 245);
+}
+.G1 a i:hover{
+    color: white;
+    background-color: rgb(247, 82, 82);
+}
+.L1 a i:hover{
+    color: white;
+    background-color: rgb(99, 99, 245);
+}
+.footer_content{
+  display: grid;
+  grid-template-columns: repeat(3, 2fr);
+  justify-content: space-evenly;
+  column-gap: 3rem;
+  row-gap: 2rem;
+  padding: 1rem 5rem;
+  
+}
+.Buisness_about h2{
+    text-align: center;
+    padding: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: silver;
+}
+.Buisness_about h2 a{
+    text-decoration: none;
+    color: silver;
+}
+.Buisness_about h2 a:hover{
+    border-bottom: 1px solid silver;
+}
+.descirption_business{
+ color: silver;
+ font-size: 14px;
+ padding-left: 2rem;
+ padding-right: 2rem;
+ text-align: justify;
+ line-height: 1.5;
+}
+.Unorder_list li{
+    list-style: none;
+    color: silver;
+    padding-left: 2rem;
+    padding-right: 4rem;
+    font-size: 14px;
+    line-height: 2.2;
+    border-bottom: 1px solid rgb(46, 46, 46);
+}
+.Unorder_list li a{
+    color: silver;
+    text-decoration: none;
+}
+.Unorder_list li a:hover{
+    border-bottom: 1px solid rgb(46, 46, 46);
+}
+.Copyright_section{
+    display: flex;
+    justify-content: space-around;
+    border-top: 1px solid rgb(46, 46, 46) ;
+    color: silver;
+    font-size: 14px;
+    padding-top: 1rem;
+}
+
